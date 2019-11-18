@@ -1,0 +1,9 @@
+__pycache__
+.vscode
+flask_session
+portfolio-materials
+app.pyc
+requirements.txt
+env
+.DS_Store
+readme-src

@@ -1,0 +1,66 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article{
+    background-color: white;
+    height: 50%;
+    width: 40%;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+article > nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: gray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+article > nav > a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: purple;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+article > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+article > form > input{
+    height: 25px;
+    width: 70%;
+    font-size: 1.2em;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+article > form > input[type='submit']{
+    width: 40%;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.0em;
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            {% if isLogIn %}
+            Log In
+            {% else %}
+            Sign Up
+            {% endif %}
+        </title>
+        <link rel='stylesheet' type='text/css' href='../static/index.css'>
+        {% if isLogIn %}
+       <style>
+           #signup{
+               background-color: gray;
+               border-radius: none;
+           }
+       </style>
+       {% else %}
+       <style>
+           #login{
+               background-color: gray;
+               border-radius: 0;
+           }
+       </style>
+       {% endif %}
+    </head>
+    <body>
+        <article>
+            <nav>
+                <a id='login' href='{{ url_for('login') }}'>Log In</a><a id='signup' href='{{ url_for('signup') }}'>Sign up</a>
+            </nav>
+            <form 
+                {% if isLogIn %}
+                action='{{ url_for('login') }}'
+                {% else %}
+                action='{{ url_for('signup') }}'
+                {% endif %}
+                method='post'>
+                {% if not isLogIn %}
+                <input type='text' id='name' name='name' placeholder='Name' autocomplete="off">
+                {% endif %}
+                <input type='email' id='email' name='email' placeholder='Email' autocomplete="off">
+                <input type='password' id='password' name='password' placeholder='Password'>
+                <input type='submit' 
+                    {% if isLogIn %}
+                    value='Log In'
+                    {% else %}
+                    value='Sign up'
+                    {% endif %}>
+            </form>
+        </article>
+    </body>
+</html> 
