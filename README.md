@@ -1,5 +1,5 @@
 
-# Simple Online Chatroom
+# Flack Simple Online Chatroom
 
 ## A Short Introduction:
 A simple online chatroom like slack, has the minimal functionality
