@@ -32,7 +32,7 @@ Werkzeug                      0.14.1
 
 ## Features:
 * Sign up / Log In interested user.
-<img src='./readme-src/Chat_User.gif'>
+<img src='./readme-src/Chat_User.gif' width='640px' height='360px'>
 
 * Real-time communication on channels created by users.
 <img src='./readme-src/Chat_Message.gif'>
