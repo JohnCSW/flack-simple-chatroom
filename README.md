@@ -28,7 +28,7 @@ Werkzeug                      0.14.1
 2. Use python3 and have download [virtualenv](https://virtualenv.pypa.io/en/latest/).
 3. `source ./env/bin/activate` to enable virtual enviroment.
 4. Install all dependecies listed above.
-5. `python app.js` ** Important **
+5. `python app.py` ** Important **
 
 ## Features:
 * Sign up / Log In interested user.
